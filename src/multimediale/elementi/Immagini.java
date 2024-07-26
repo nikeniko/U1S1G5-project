@@ -11,6 +11,10 @@ public class Immagini extends ElementoMultimediale {
         this.luminosita = luminosita;
     }
 
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
+    }
+
     public void aumentaLuminosita() {
         luminosita++;
     }
@@ -20,7 +24,7 @@ public class Immagini extends ElementoMultimediale {
     }
 
     public void show() {
-        System.out.println(titolo + " " + "L " + "*".repeat(luminosita));
+        System.out.println(titolo + " " + "B " + "*".repeat(luminosita));
     }
 
 }

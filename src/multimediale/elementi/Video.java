@@ -15,6 +15,19 @@ public class Video extends ElementoMultimediale implements Riproduzione {
         this.luminosita = luminosita;
     }
 
+    public void setDurata(int durata) {
+        this.durata = durata;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
+    }
+
+
     public void abbassaVoulme() {
         volume--;
 
@@ -35,7 +48,7 @@ public class Video extends ElementoMultimediale implements Riproduzione {
     @Override
     public void play() {
         for (int i = 0; i < durata; i++) {
-            System.out.println(titolo + " " + "V " + "!".repeat(volume) + "L " + "*".repeat(luminosita));
+            System.out.println(titolo + " " + "V " + "!".repeat(volume) + " B " + "*".repeat(luminosita));
         }
     }
 }

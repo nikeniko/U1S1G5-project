@@ -13,6 +13,14 @@ public class Audio extends ElementoMultimediale implements Riproduzione {
         this.volume = volume;
     }
 
+    public void setDurata(int durata) {
+        this.durata = durata;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
     public void abbassaVolume() {
         volume--;
 
