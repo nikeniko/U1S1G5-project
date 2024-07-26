@@ -25,7 +25,7 @@ public class Audio extends ElementoMultimediale implements Riproduzione {
     @Override
     public void play() {
         for (int i = 0; i < durata; i++) {
-            System.out.println(titolo + " " + "m" + "!".repeat(volume));
+            System.out.println(titolo + " " + "V " + "!".repeat(volume));
         }
     }
 }
